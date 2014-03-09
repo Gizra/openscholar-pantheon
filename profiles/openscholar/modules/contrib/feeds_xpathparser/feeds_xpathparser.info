@@ -14,9 +14,9 @@ files[] = tests/feeds_xpathparser_query_parser.test
 core = 7.x
 
 
-; Information added by drush on 2014-02-16
+; Information added by drush on 2014-03-09
 version = "7.x-3.x-dev"
 core = "7.x"
 project = "feeds_xpathparser"
-datestamp = "1392540026"
+datestamp = "1394361016"
 

@@ -311,6 +311,24 @@ class FeatureContext extends DrupalContext {
   }
 
   /**
+   * @When /^I change privacy of the site "([^"]*)" to "([^"]*)"$/
+   */
+  public function iChangePrivacyTo($vsite, $visibility) {
+
+    $privacy_level = array(
+      'Public on the web. ' => 0,
+      'Anyone with the link. ' => 2,
+      'Invite only during site creation. ' => 1,
+    );
+
+    return array(
+      new Step\When('I visit "' . $vsite . '/cp/settings"'),
+      new Step\When('I select the radio button named "vsite_private" with value "' . $privacy_level[$visibility] . '"'),
+      new Step\When('I press "edit-submit"'),
+    );
+  }
+
+  /**
    * @Then /^I should verify the node "([^"]*)" not exists$/
    */
   public function iShouldVerifyTheNodeNotExists($title) {
@@ -450,10 +468,15 @@ class FeatureContext extends DrupalContext {
   }
 
   /**
-   * @Given /^cache is enabled for anonymous users$/
+   * @Given /^cache is "([^"]*)" for anonymous users$/
    */
-  public function cacheIsEnabledForAnonymousUsers() {
-    $this->getDriver()->drush('vset cache 1');
+  public function cacheIsForAnonymousUsers($status) {
+    if ($status == "enabled") {
+      $this->getDriver()->drush('vset cache 1');
+    }
+    else if ($status == "disabled") {
+      $this->getDriver()->drush('vset cache 0');
+    }
   }
 
   /**
