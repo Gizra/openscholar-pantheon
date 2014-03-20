@@ -46,6 +46,7 @@ class views_og_cache_plugin_cache_time extends views_plugin_cache_time {
         'base_url' => $GLOBALS['base_url'],
         'og_roles' => og_get_user_roles($og_context['group_type'], $og_context['gid']),
         'admin' => user_access('administer group'),
+        'display_handler' => $this->view->display_handler,
       );
 
       if ($this->options['og_access']) {
@@ -79,6 +80,7 @@ class views_og_cache_plugin_cache_time extends views_plugin_cache_time {
         'base_url' => $GLOBALS['base_url'],
         'og_roles' => og_get_user_roles($og_context['group_type'], $og_context['gid']),
         'admin' => user_access('administer group'),
+        'display_handler' => $this->view->display_handler,
       );
 
       if ($this->options['og_access']) {

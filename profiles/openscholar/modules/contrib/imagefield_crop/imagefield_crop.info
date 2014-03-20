@@ -7,9 +7,9 @@ dependencies[] = image
 files[] = imagefield_crop.module
 
 
-; Information added by drush on 2014-03-09
+; Information added by drush on 2014-03-20
 version = "7.x-2.0+7-dev"
 core = "7.x"
 project = "imagefield_crop"
-datestamp = "1394361060"
+datestamp = "1395300704"
 

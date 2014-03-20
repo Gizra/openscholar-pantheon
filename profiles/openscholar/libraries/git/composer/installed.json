@@ -25,7 +25,7 @@
                 "dev-master": "2.5-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "Symfony\\Component\\Process\\": ""
@@ -81,7 +81,7 @@
                 "dev-master": "2.5-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "Symfony\\Component\\EventDispatcher\\": ""
@@ -126,7 +126,7 @@
         },
         "time": "2013-03-06 18:24:04",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "GitWrapper": "src/"
@@ -208,7 +208,7 @@
                 "dev-master": "3.7-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "Guzzle\\Tests": "tests/",
@@ -272,7 +272,7 @@
                 "dev-master": "1.3.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "Github\\": "lib/"

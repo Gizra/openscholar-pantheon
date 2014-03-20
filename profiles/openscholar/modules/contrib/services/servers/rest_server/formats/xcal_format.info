@@ -4,9 +4,9 @@ package = Services
 core = 6.x
 php = 5.x
 
-; Information added by drush on 2014-03-09
+; Information added by drush on 2014-03-20
 version = "7.x-3.3+42-dev"
 core = "7.x"
 project = "services"
-datestamp = "1394361247"
+datestamp = "1395300781"
 

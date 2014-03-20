@@ -5,9 +5,9 @@ dependencies[] = ctools
 core = 7.x
 
 
-; Information added by drush on 2014-03-09
+; Information added by drush on 2014-03-20
 version = "7.x-1.2+7-dev"
 core = "7.x"
 project = "ctools"
-datestamp = "1394360930"
+datestamp = "1395300651"
 
